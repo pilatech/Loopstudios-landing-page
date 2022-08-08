@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font: inherit;
+}
+
+:root {
+  font-size: 62.5%;
+ --clr-white: hsl(0, 0%, 100%);
+ --clr-black: hsl(0, 0%, 0%);
+ --clr-gray: hsl(0, 0%, 55%);
+ --clr-dark-gray: hsl(0, 0%, 41%);
+ --font-body: 'Alata', sans-serif;
+ --font-titles: 'Josefin Sans', sans-serif;
+}
+
+body {
+ font-size: 1.5rem;
+ font-family: var(--font-body);
+ color: var(--clr-dark-gray)
+}
+
+.container {
+ max-width: 38rem;
+ margin-inline: auto;
+ width: 90%;
+}
+
+.header {
+ background: url(images/mobile/image-hero.jpg);
+ background-size: cover;
+ padding-bottom: 20rem;
+ margin-bottom: 10rem;
+}
+
+.nav {
+ display: flex;
+ justify-content: space-between;
+ padding-block: 3.5rem;
+ margin-bottom: 18rem;
+}
+
+.logo {
+ width: 18rem;
+}
+
+.nav__toggle {
+ border: none;
+ background: transparent;
+ cursor: pointer;
+}
+
+.nav__menu {
+ background: var(--clr-black);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ min-height: 100vh;
+ padding: 4rem 3rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ align-content: start;
+ row-gap: 15rem;
+ transform: translateY(-100%);
+ transition: .2s cubic-bezier(0,-0.48,1,1.33);
+}
+
+.active .nav__menu {
+ transform: translateY(0);
+}
+
+.logo-link--open {
+  grid-column: 1 / 2;
+
+}
+
+.nav__toggle--close {
+ grid-column: 2 / 3;
+ justify-self: end;
+}
+
+.nav__menu-list {
+ list-style: none;
+}
+
+.nav__menu-item {
+ margin-bottom: 3.5rem;
+}
+
+.nav__link {
+ font-family: var(--font-titles);
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--clr-white);
+ font-size: 2.8rem;
+}
+
+.title {
+ color: var(--clr-white);
+ border: 2px solid;
+ font-family: var(--font-titles);
+ text-transform: uppercase;
+ font-size: 4.5rem;
+ padding: 3rem;
+}
+
+.intro {
+ margin-bottom: 10rem;
+ text-align: center;
+}
+
+.intro__hero {
+ height: 30rem;
+ background: url(images/mobile/image-interactive.jpg);
+ margin-bottom: 5rem;
+ background-size: cover;
+}
+.intro__title,
+.grid__title {
+ color: var(--clr-black);
+ font-size: 3.8rem;
+ font-family: var(--font-titles);
+ text-transform: uppercase;
+ line-height: 1;
+ margin-bottom: 3rem;
+}
+.intro__text {
+ line-height: 1.7;
+}
+
+.grid {
+ display: grid;
+ gap: 3.5rem;
+ margin-bottom: 10rem;
+}
+
+.feature {
+ padding: 7rem 3rem 3rem;
+ color: var(--clr-white);
+}
+
+.feature__title {
+ font-size: 3.5rem;
+ font-family: var(--font-titles);
+ text-transform: uppercase;
+ width: 60%;
+}
+
+.feature:first-of-type {
+ background: url(images/mobile/image-deep-earth.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(2){
+ background: url(images/mobile/image-night-arcade.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(3){
+ background: url(images/mobile/image-soccer-team.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(4){
+ background: url(images/mobile/image-grid.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(5){
+ background: url(images/mobile/image-from-above.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(6){
+ background: url(images/mobile/image-pocket-borealis.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(7){
+ background: url(images/mobile/image-curiosity.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.feature:nth-of-type(8){
+ background: url(images/mobile/image-fisheye.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.btn {
+ order: 2;
+ width: 45%;
+ border: 1px solid var(--clr-black);
+ background: transparent;
+ padding: 1.2rem;
+ margin-inline: auto;
+ text-transform: uppercase;
+ color: var(--clr-black);
+ letter-spacing: 4px;
+ cursor: pointer;
+}
+
+.footer {
+ background: var(--clr-black);
+ padding-block: 8rem;
+ text-align: center;
+}
+
+.footer__logo {
+ margin-bottom: 5rem;
+}
+
+.footer__menu {
+ margin-bottom: 5rem;
+ list-style: none;
+}
+
+.footer__menu-item {
+ margin-bottom: 3rem;
+}
+
+.footer__link {
+ color: var(--clr-white);
+ text-decoration: none;
+}
+
+.footer__social {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 2rem;
+ gap: 1.2rem;
+}

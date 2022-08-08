@@ -7,48 +7,125 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
+ <header class="header">
+  <nav class="nav container">
+    <a href="#" class="logo-link">
+     <img src="images/logo.svg" alt="logo" class="logo">
+    </a>
+    <button class="nav__toggle nav__toggle--open"><img src="images/icon-hamburger.svg" alt="mobile menu icon" class="nav__icon"></button>
+    <div class="nav__menu">
+     <a href="#" class="logo-link--open">
+      <img src="images/logo.svg" alt="logo" class="logo">
+     </a>
+     <button class="nav__toggle nav__toggle--close"><img src="images/icon-close.svg" alt="close mobile menu icon" class="nav__icon"></button>
+     <ul class="nav__menu-list">
+      <li class="nav__menu-item"><a href="#" class="nav__link">About</a></li>
+      <li class="nav__menu-item"><a href="#" class="nav__link">Careers</a></li>
+      <li class="nav__menu-item"><a href="#" class="nav__link">Events</a></li>
+      <li class="nav__menu-item"><a href="#" class="nav__link">Products</a></li>
+      <li class="nav__menu-item"><a href="#" class="nav__link">Support</a></li>
+    </ul>
+    </div>
+  </nav>
+  <div class="container">
+   <h1 class="title">
+    immersive experiences that deliver
+   </h1>
+  </div>
+ </header>
+ <section class="intro container">
+  <div class="intro__hero"></div>
+  <div class="intro__content">
+   <h2 class="intro__title">
+    The leader in interactive VR
+   </h2>
+   <p class="intro__text">
+    Founded in 2011, Loopstudios has been producing world-class virtual reality 
+    projects for some of the best companies around the globe. Our award-winning 
+    creations have transformed businesses through digital experiences that bind 
+    to their brand.
+   </p>
+  </div>
+ </section>
+ <section class="grid container">
+  <h2 class="grid__title">
+   Our creations
+  </h2>
+  <button class="btn">see all</button>
+  <article class="feature">
+   <h3 class="feature__title">
+    Deep Earth
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    Night Arcade
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    Soccer Team VR
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    The Grid
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    From up above VR
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    Pocket Borealis
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    The curiosity
+   </h3>
+  </article>
+  <article class="feature">
+   <h3 class="feature__title">
+    Make it fish eye
+   </h3>
+  </article>
+ </section>
+ <footer class="footer">
+  <div class="container footer__content">
+    <div class="footer__nav">
+     <img src="images/logo.svg" alt="logo" class="footer__logo">
+     <ul class="footer__menu">
+      <li class="footer__menu-item"><a href="#" class="footer__link">About</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Careers</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Events</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Products</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">Support</a></li>
+     </ul>
+    </div>
+    <div class="footer__connect">
+     <div class="footer__social">
+      <img src="images/icon-facebook.svg" alt="facebook" class="social__icon">
+      <img src="images/icon-twitter.svg" alt="twitter" class="social__icon"><img src="images/icon-pinterest.svg" alt="pintrest" class="social__icon"><img src="images/icon-instagram.svg" alt="instagram" class="social__icon">
+     </div>
+     <small class="copyright">
+      &copy; 2021 Loopstudios. All rights reserved.
+     </small>
+    </div>
+  </div>
+ </footer>
   <script src="script.js"></script>
 </body>
 </html>
